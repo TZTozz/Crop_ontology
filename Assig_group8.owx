@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/miche/ontologies/2025/11/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/miche/ontologies/2025/11/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/miche/ontologies/2025/11/untitled-ontology-5/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AgriculturalOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apiaceae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutonomusTractor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brassicaceae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broccoli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cabbage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carrot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cauliflower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Celery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cucumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cucurbitaceae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eggplant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fabaceae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IrrigationSprinkler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Melon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parsnip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pepper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poaceae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Potato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seeder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solanaceae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Squash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetCorn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tomato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTool"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Apiaceae"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomusTractor"/>
+        <Class IRI="#Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomusTractor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTool"/>
+            <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beans"/>
+        <Class IRI="#Fabaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brassicaceae"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broccoli"/>
+        <Class IRI="#Brassicaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cabbage"/>
+        <Class IRI="#Brassicaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carrot"/>
+        <Class IRI="#Apiaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cauliflower"/>
+        <Class IRI="#Brassicaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Celery"/>
+        <Class IRI="#Apiaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber"/>
+        <Class IRI="#Cucurbitaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucurbitaceae"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eggplant"/>
+        <Class IRI="#Solanaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fabaceae"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrrigationSprinkler"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melon"/>
+        <Class IRI="#Cucurbitaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parsnip"/>
+        <Class IRI="#Apiaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peas"/>
+        <Class IRI="#Fabaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pepper"/>
+        <Class IRI="#Solanaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plow"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poaceae"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potato"/>
+        <Class IRI="#Solanaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radish"/>
+        <Class IRI="#Brassicaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seeder"/>
+        <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solanaceae"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Squash"/>
+        <Class IRI="#Cucurbitaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetCorn"/>
+        <Class IRI="#Poaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tomato"/>
+        <Class IRI="#Solanaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <Class IRI="#Machine"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AutonomusTractor"/>
+        <Class IRI="#Tool"/>
+    </DisjointClasses>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTool"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasTool"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTool"/>
+            <Class IRI="#AutonomusTractor"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTool"/>
+            <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
