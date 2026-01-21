@@ -19,6 +19,15 @@
         <Class IRI="#Apiaceae"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Area1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area3"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AutonomusTractor"/>
     </Declaration>
     <Declaration>
@@ -58,6 +67,12 @@
         <Class IRI="#Fabaceae"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Irrigation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#IrrigationSprinkler"/>
     </Declaration>
     <Declaration>
@@ -91,7 +106,13 @@
         <Class IRI="#Seeder"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SoilPreparation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Solanaceae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sowing"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Squash"/>
@@ -108,9 +129,27 @@
     <Declaration>
         <ObjectProperty IRI="#hasTool"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlantedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prerforms"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Apiaceae"/>
         <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area1"/>
+        <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area2"/>
+        <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area3"/>
+        <Class IRI="#Field"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AutonomusTractor"/>
@@ -168,8 +207,19 @@
         <Class IRI="#Crop"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Irrigation"/>
+        <Class IRI="#AgriculturalOperation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#IrrigationSprinkler"/>
         <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrrigationSprinkler"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prerforms"/>
+            <Class IRI="#Irrigation"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Melon"/>
@@ -192,6 +242,13 @@
         <Class IRI="#Tool"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Plow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prerforms"/>
+            <Class IRI="#SoilPreparation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Poaceae"/>
         <Class IRI="#Crop"/>
     </SubClassOf>
@@ -208,8 +265,23 @@
         <Class IRI="#Tool"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Seeder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prerforms"/>
+            <Class IRI="#Sowing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilPreparation"/>
+        <Class IRI="#AgriculturalOperation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Solanaceae"/>
         <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sowing"/>
+        <Class IRI="#AgriculturalOperation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Squash"/>
@@ -228,14 +300,71 @@
         <Class IRI="#Machine"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#AgriculturalOperation"/>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Field"/>
+        <Class IRI="#Machine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Apiaceae"/>
+        <Class IRI="#Brassicaceae"/>
+        <Class IRI="#Cucurbitaceae"/>
+        <Class IRI="#Fabaceae"/>
+        <Class IRI="#Poaceae"/>
+        <Class IRI="#Solanaceae"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#AutonomusTractor"/>
         <Class IRI="#Tool"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Beans"/>
+        <Class IRI="#Peas"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Broccoli"/>
+        <Class IRI="#Cabbage"/>
+        <Class IRI="#Cauliflower"/>
+        <Class IRI="#Radish"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Carrot"/>
+        <Class IRI="#Celery"/>
+        <Class IRI="#Parsnip"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cucumber"/>
+        <Class IRI="#Melon"/>
+        <Class IRI="#Squash"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Eggplant"/>
+        <Class IRI="#Pepper"/>
+        <Class IRI="#Potato"/>
+        <Class IRI="#Tomato"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationSprinkler"/>
+        <Class IRI="#Plow"/>
+        <Class IRI="#Seeder"/>
     </DisjointClasses>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
     </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPlantedIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#prerforms"/>
+    </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPlantedIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#prerforms"/>
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTool"/>
@@ -244,11 +373,39 @@
             <Class IRI="#AutonomusTractor"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlantedIn"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Crop"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#prerforms"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prerforms"/>
+            <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTool"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasTool"/>
             <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlantedIn"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Field"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#prerforms"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prerforms"/>
+            <Class IRI="#AgriculturalOperation"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
 </Ontology>
