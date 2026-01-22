@@ -127,6 +127,9 @@
         <Class IRI="#Tool"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#canBePlantedWith"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasTool"/>
     </Declaration>
     <Declaration>
@@ -257,6 +260,41 @@
         <Class IRI="#Solanaceae"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Potato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <Class IRI="#Beans"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <Class IRI="#Cabbage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <Class IRI="#Eggplant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <Class IRI="#Peas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <Class IRI="#Radish"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Radish"/>
         <Class IRI="#Brassicaceae"/>
     </SubClassOf>
@@ -348,6 +386,14 @@
         <Class IRI="#Plow"/>
         <Class IRI="#Seeder"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Melon"/>
+        <Class IRI="#Potato"/>
+        <Class IRI="#Squash"/>
+    </DisjointClasses>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#canBePlantedWith"/>
+    </SymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
     </AsymmetricObjectProperty>
@@ -357,6 +403,9 @@
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#prerforms"/>
     </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#canBePlantedWith"/>
+    </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
     </IrreflexiveObjectProperty>
