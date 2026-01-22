@@ -236,13 +236,6 @@
         <Class IRI="#IrrigationTool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BoomSprayer"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#prerforms"/>
-            <Class IRI="#Irrigation"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Brassicaceae"/>
         <Class IRI="#Crop"/>
     </SubClassOf>
@@ -422,6 +415,13 @@
         <Class IRI="#Tool"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#IrrigationTool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prerforms"/>
+            <Class IRI="#Irrigation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Melon"/>
         <Class IRI="#Cucurbitaceae"/>
     </SubClassOf>
@@ -500,6 +500,13 @@
     <SubClassOf>
         <Class IRI="#PlantingTool"/>
         <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlantingTool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prerforms"/>
+            <Class IRI="#Sowing"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Plow"/>
@@ -595,6 +602,13 @@
     <SubClassOf>
         <Class IRI="#SoilPrepTool"/>
         <Class IRI="#Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilPrepTool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#prerforms"/>
+            <Class IRI="#SoilPreparation"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SoilPreparation"/>
