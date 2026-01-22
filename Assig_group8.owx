@@ -91,9 +91,6 @@
         <Class IRI="#IrrigationTool"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Machine"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Melon"/>
     </Declaration>
     <Declaration>
@@ -160,6 +157,9 @@
         <Class IRI="#Tool"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#WindSensor"/>
     </Declaration>
     <Declaration>
@@ -208,17 +208,6 @@
     <SubClassOf>
         <Class IRI="#Area3"/>
         <Class IRI="#Field"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AutonomusTractor"/>
-        <Class IRI="#Machine"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AutonomusTractor"/>
-        <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="#hasTool"/>
-            <Class IRI="#Tool"/>
-        </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Beans"/>
@@ -797,7 +786,18 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tool"/>
-        <Class IRI="#Machine"/>
+        <Class IRI="#AutonomusTractor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#AutonomusTractor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTool"/>
+            <Class IRI="#Tool"/>
+        </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WindSensor"/>
@@ -805,9 +805,9 @@
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AgriculturalOperation"/>
+        <Class IRI="#AutonomusTractor"/>
         <Class IRI="#Crop"/>
         <Class IRI="#Field"/>
-        <Class IRI="#Machine"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Apiaceae"/>
@@ -816,10 +816,6 @@
         <Class IRI="#Fabaceae"/>
         <Class IRI="#Poaceae"/>
         <Class IRI="#Solanaceae"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#AutonomusTractor"/>
-        <Class IRI="#Tool"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Beans"/>
@@ -856,6 +852,10 @@
         <Class IRI="#Irrigation"/>
         <Class IRI="#SoilPreparation"/>
         <Class IRI="#Sowing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Tool"/>
+        <Class IRI="#Vehicle"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Season"/>
@@ -914,7 +914,7 @@
         <ObjectProperty IRI="#hasTool"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasTool"/>
-            <Class IRI="#AutonomusTractor"/>
+            <Class IRI="#Vehicle"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
