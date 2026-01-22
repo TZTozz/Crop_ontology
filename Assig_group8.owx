@@ -377,19 +377,16 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Eggplant"/>
+        <Class IRI="#Melon"/>
         <Class IRI="#Pepper"/>
         <Class IRI="#Potato"/>
+        <Class IRI="#Squash"/>
         <Class IRI="#Tomato"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#IrrigationSprinkler"/>
         <Class IRI="#Plow"/>
         <Class IRI="#Seeder"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Melon"/>
-        <Class IRI="#Potato"/>
-        <Class IRI="#Squash"/>
     </DisjointClasses>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#canBePlantedWith"/>
