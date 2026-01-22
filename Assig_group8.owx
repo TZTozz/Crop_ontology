@@ -725,10 +725,6 @@
         <Class IRI="#PlantingTool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sensor"/>
-        <Class IRI="#HumiditySensor"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SoilPrepTool"/>
         <Class IRI="#Tool"/>
     </SubClassOf>
