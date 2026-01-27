@@ -241,6 +241,9 @@
         <ObjectProperty IRI="#isPlantedIn"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isSoilTypeOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#needsPhLevel"/>
     </Declaration>
     <Declaration>
@@ -291,12 +294,33 @@
         <Class IRI="#Field"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Area1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSoilTypeOf"/>
+            <Class IRI="#Organic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Area2"/>
         <Class IRI="#Field"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Area2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSoilTypeOf"/>
+            <Class IRI="#Sandy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Area3"/>
         <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSoilTypeOf"/>
+            <Class IRI="#Organic"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AutonomousTractor"/>
@@ -391,6 +415,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#SweetCorn"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beans"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area2"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -614,6 +645,13 @@
     <SubClassOf>
         <Class IRI="#Carrot"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area1"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carrot"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#needsPhLevel"/>
             <ObjectUnionOf>
                 <Class IRI="#Acidic"/>
@@ -672,6 +710,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Celery"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cauliflower"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area3"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -749,6 +794,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Tomato"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Celery"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area3"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -912,6 +964,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Peas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eggplant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area2"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1285,6 +1344,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Parsnip"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pepper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area1"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1930,6 +1996,9 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
     </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isSoilTypeOf"/>
+    </FunctionalObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#canBePlantedWith"/>
     </SymmetricObjectProperty>
@@ -1944,6 +2013,9 @@
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#isPlantedIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSoilTypeOf"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#needsTypeIrrigation"/>
@@ -1971,6 +2043,9 @@
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#isPlantedIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSoilTypeOf"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#needsTypeIrrigation"/>
