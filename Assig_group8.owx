@@ -1915,6 +1915,11 @@
         <Class IRI="#Solanaceae"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Area1"/>
+        <Class IRI="#Area2"/>
+        <Class IRI="#Area3"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Beans"/>
         <Class IRI="#Peas"/>
     </DisjointClasses>
@@ -1966,6 +1971,10 @@
     <DisjointClasses>
         <Class IRI="#Harrow"/>
         <Class IRI="#Plow"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighPowerVehicle"/>
+        <Class IRI="#LowPowerVehicle"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Irrigation"/>
