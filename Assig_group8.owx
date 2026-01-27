@@ -300,7 +300,10 @@
     </SubClassOf>
     <SubClassOf>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         <Class IRI="#AutonomousTractor"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasTool"/>
@@ -900,7 +903,11 @@
     <SubClassOf>
         <Class IRI="#HighPowerVehicle"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <Class IRI="#Vehicle"/>
+=======
+        <Class IRI="#AutonomousTractor"/>
+>>>>>>> Stashed changes
 =======
         <Class IRI="#AutonomousTractor"/>
 >>>>>>> Stashed changes
@@ -945,7 +952,11 @@
     <SubClassOf>
         <Class IRI="#LowPowerVehicle"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <Class IRI="#Vehicle"/>
+=======
+        <Class IRI="#AutonomousTractor"/>
+>>>>>>> Stashed changes
 =======
         <Class IRI="#AutonomousTractor"/>
 >>>>>>> Stashed changes
@@ -1837,7 +1848,10 @@
     </SymmetricObjectProperty>
     <AsymmetricObjectProperty>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         <ObjectProperty IRI="#hasPhLevel"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
@@ -1867,7 +1881,10 @@
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         <ObjectProperty IRI="#hasPhLevel"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
