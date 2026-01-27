@@ -37,7 +37,7 @@
         <Class IRI="#Area3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#AutonomusTractor"/>
+        <Class IRI="#AutonomousTractor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Beans"/>
@@ -229,7 +229,7 @@
         <ObjectProperty IRI="#canBePlantedWith"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPH"/>
+        <ObjectProperty IRI="#hasPhLevel"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSensor"/>
@@ -253,7 +253,7 @@
         <ObjectProperty IRI="#needsTypeSeeding"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#prerforms"/>
+        <ObjectProperty IRI="#performs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#seasonPreferred"/>
@@ -299,7 +299,7 @@
         <Class IRI="#Field"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#AutonomusTractor"/>
+        <Class IRI="#AutonomousTractor"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasTool"/>
             <Class IRI="#Tool"/>
@@ -571,7 +571,7 @@
     <SubClassOf>
         <Class IRI="#Calcareous"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Alkaline"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -793,14 +793,14 @@
     <SubClassOf>
         <Class IRI="#Clay"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Alkaline"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Clay"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Neutral"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -811,7 +811,7 @@
     <SubClassOf>
         <Class IRI="#ClaySandy"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Neutral"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -960,7 +960,7 @@
     <SubClassOf>
         <Class IRI="#Gravel"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Neutral"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -970,7 +970,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HighPowerVehicle"/>
-        <Class IRI="#AutonomusTractor"/>
+        <Class IRI="#AutonomousTractor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HighPowerVehicle"/>
@@ -994,7 +994,7 @@
     <SubClassOf>
         <Class IRI="#IrrigationTool"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#prerforms"/>
+            <ObjectProperty IRI="#performs"/>
             <Class IRI="#Irrigation"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1005,13 +1005,13 @@
     <SubClassOf>
         <Class IRI="#Loamy"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Neutral"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowPowerVehicle"/>
-        <Class IRI="#AutonomusTractor"/>
+        <Class IRI="#AutonomousTractor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowPowerVehicle"/>
@@ -1093,14 +1093,14 @@
     <SubClassOf>
         <Class IRI="#Organic"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Acidic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Organic"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Neutral"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1265,7 +1265,7 @@
     <SubClassOf>
         <Class IRI="#Peaty"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Acidic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1336,7 +1336,7 @@
     <SubClassOf>
         <Class IRI="#PlantingTool"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#prerforms"/>
+            <ObjectProperty IRI="#performs"/>
             <Class IRI="#Sowing"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1422,7 +1422,7 @@
     <SubClassOf>
         <Class IRI="#PrecisionPlanter"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#prerforms"/>
+            <ObjectProperty IRI="#performs"/>
             <Class IRI="#Sowing"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1517,7 +1517,7 @@
     <SubClassOf>
         <Class IRI="#Rocky"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Neutral"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1528,14 +1528,14 @@
     <SubClassOf>
         <Class IRI="#Sandy"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Acidic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sandy"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Neutral"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1550,7 +1550,7 @@
     <SubClassOf>
         <Class IRI="#Silty"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPH"/>
+            <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Neutral"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1561,7 +1561,7 @@
     <SubClassOf>
         <Class IRI="#SoilPrepTool"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#prerforms"/>
+            <ObjectProperty IRI="#performs"/>
             <Class IRI="#SoilPreparation"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1823,7 +1823,7 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#AgriculturalOperation"/>
-        <Class IRI="#AutonomusTractor"/>
+        <Class IRI="#AutonomousTractor"/>
         <Class IRI="#Crop"/>
         <Class IRI="#Field"/>
         <Class IRI="#PhLevel"/>
@@ -1934,7 +1934,7 @@
         <ObjectProperty IRI="#canBePlantedWith"/>
     </SymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasPH"/>
+        <ObjectProperty IRI="#hasPhLevel"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasSensor"/>
@@ -1955,13 +1955,13 @@
         <ObjectProperty IRI="#needsTypeSeeding"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#prerforms"/>
+        <ObjectProperty IRI="#performs"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#seasonPreferred"/>
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasPH"/>
+        <ObjectProperty IRI="#hasPhLevel"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasSensor"/>
@@ -1982,7 +1982,7 @@
         <ObjectProperty IRI="#needsTypeSeeding"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#prerforms"/>
+        <ObjectProperty IRI="#performs"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#seasonPreferred"/>
@@ -1992,7 +1992,7 @@
         <Class IRI="#Crop"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPH"/>
+        <ObjectProperty IRI="#hasPhLevel"/>
         <Class IRI="#SoilType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2020,7 +2020,7 @@
         <Class IRI="#Crop"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#prerforms"/>
+        <ObjectProperty IRI="#performs"/>
         <Class IRI="#Tool"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2032,7 +2032,7 @@
         <Class IRI="#Crop"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPH"/>
+        <ObjectProperty IRI="#hasPhLevel"/>
         <Class IRI="#PhLevel"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -2064,7 +2064,7 @@
         <Class IRI="#PlantingTool"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#prerforms"/>
+        <ObjectProperty IRI="#performs"/>
         <Class IRI="#AgriculturalOperation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
