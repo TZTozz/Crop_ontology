@@ -133,7 +133,10 @@
         <Class IRI="#Pepper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ph"/>
+        <Class IRI="#PhLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PlantingTool"/>
@@ -175,13 +178,13 @@
         <Class IRI="#Silty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Soil"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#SoilPrepTool"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SoilPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilType"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Solanaceae"/>
@@ -196,6 +199,9 @@
         <Class IRI="#SweetCorn"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TemperatureSensor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Tomato"/>
     </Declaration>
     <Declaration>
@@ -203,9 +209,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Transplanter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Type"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Vehicle"/>
@@ -254,7 +257,7 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#Acidic"/>
-        <Class IRI="#Ph"/>
+        <Class IRI="#PhLevel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AirSeeder"/>
@@ -262,7 +265,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Alkaline"/>
-        <Class IRI="#Ph"/>
+        <Class IRI="#PhLevel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Apiaceae"/>
@@ -525,7 +528,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Calcareous"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Calcareous"/>
@@ -737,7 +740,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Clay"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Clay"/>
@@ -755,7 +758,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ClaySandy"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ClaySandy"/>
@@ -908,7 +911,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gravel"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gravel"/>
@@ -942,7 +945,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Loamy"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Loamy"/>
@@ -1009,11 +1012,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Neutral"/>
-        <Class IRI="#Ph"/>
+        <Class IRI="#PhLevel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Organic"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Organic"/>
@@ -1175,7 +1178,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Peaty"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Peaty"/>
@@ -1245,7 +1248,7 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Ph"/>
+        <Class IRI="#PhSensor"/>
         <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
@@ -1435,7 +1438,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Rocky"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Rocky"/>
@@ -1446,7 +1449,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sandy"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sandy"/>
@@ -1468,7 +1471,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Silty"/>
-        <Class IRI="#Type"/>
+        <Class IRI="#SoilType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Silty"/>
@@ -1652,6 +1655,10 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TemperatureSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Tomato"/>
         <Class IRI="#Solanaceae"/>
     </SubClassOf>
@@ -1713,10 +1720,6 @@
         <Class IRI="#PlantingTool"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Type"/>
-        <Class IRI="#Soil"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Vehicle"/>
         <Class IRI="#AutonomusTractor"/>
     </SubClassOf>
@@ -1736,9 +1739,10 @@
         <Class IRI="#AutonomusTractor"/>
         <Class IRI="#Crop"/>
         <Class IRI="#Field"/>
+        <Class IRI="#PhLevel"/>
         <Class IRI="#Season"/>
         <Class IRI="#Sensor"/>
-        <Class IRI="#Soil"/>
+        <Class IRI="#SoilType"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Apiaceae"/>
@@ -1860,10 +1864,6 @@
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPH"/>
-        <Class IRI="#Type"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTool"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasTool"/>
@@ -1921,7 +1921,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPH"/>
-        <Class IRI="#Ph"/>
+        <Class IRI="#PhSensor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTool"/>
