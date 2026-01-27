@@ -223,9 +223,6 @@
         <Class IRI="#UAV"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Vehicle"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#WindSensor"/>
     </Declaration>
     <Declaration>
@@ -300,6 +297,13 @@
     <SubClassOf>
         <Class IRI="#Area3"/>
         <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomusTractor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTool"/>
+            <Class IRI="#Tool"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Beans"/>
@@ -966,7 +970,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HighPowerVehicle"/>
-        <Class IRI="#Vehicle"/>
+        <Class IRI="#AutonomusTractor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HighPowerVehicle"/>
@@ -1007,7 +1011,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowPowerVehicle"/>
-        <Class IRI="#Vehicle"/>
+        <Class IRI="#AutonomusTractor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowPowerVehicle"/>
@@ -1798,10 +1802,6 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Tool"/>
-        <Class IRI="#AutonomusTractor"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Transplanter"/>
         <Class IRI="#PlantingTool"/>
     </SubClassOf>
@@ -1811,17 +1811,6 @@
             <ObjectProperty IRI="#hasSensor"/>
             <Class IRI="#Sensor"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vehicle"/>
-        <Class IRI="#AutonomusTractor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vehicle"/>
-        <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="#hasTool"/>
-            <Class IRI="#Tool"/>
-        </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WindSensor"/>
@@ -1841,6 +1830,7 @@
         <Class IRI="#Season"/>
         <Class IRI="#Sensor"/>
         <Class IRI="#SoilType"/>
+        <Class IRI="#Tool"/>
         <Class IRI="#UAV"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -1920,10 +1910,6 @@
         <Class IRI="#IrrigationTool"/>
         <Class IRI="#PlantingTool"/>
         <Class IRI="#SoilPrepTool"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Tool"/>
-        <Class IRI="#Vehicle"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Season"/>
@@ -2012,10 +1998,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSensor"/>
         <Class IRI="#UAV"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTool"/>
-        <Class IRI="#Vehicle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPlantedIn"/>
