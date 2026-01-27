@@ -7,6 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/miche/ontologies/2025/11/untitled-ontology-5">
     <Prefix name="" IRI="http://www.semanticweb.org/miche/ontologies/2025/11/untitled-ontology-5/"/>
+    <Prefix name="ns0" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -58,6 +59,12 @@
         <Class IRI="#Calcareous"/>
     </Declaration>
     <Declaration>
+<<<<<<< Updated upstream
+=======
+        <Class IRI="#Camera"/>
+    </Declaration>
+    <Declaration>
+>>>>>>> Stashed changes
         <Class IRI="#Carrot"/>
     </Declaration>
     <Declaration>
@@ -95,11 +102,22 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Gravel"/>
+<<<<<<< Updated upstream
     </Declaration>
     <Declaration>
         <Class IRI="#Harrow"/>
     </Declaration>
     <Declaration>
+=======
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harrow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighPowerVehicle"/>
+    </Declaration>
+    <Declaration>
+>>>>>>> Stashed changes
         <Class IRI="#HumiditySensor"/>
     </Declaration>
     <Declaration>
@@ -110,6 +128,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Loamy"/>
+<<<<<<< Updated upstream
+=======
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowPowerVehicle"/>
+>>>>>>> Stashed changes
     </Declaration>
     <Declaration>
         <Class IRI="#Melon"/>
@@ -223,6 +247,12 @@
         <ObjectProperty IRI="#hasPH"/>
     </Declaration>
     <Declaration>
+<<<<<<< Updated upstream
+=======
+        <ObjectProperty IRI="#hasSensor"/>
+    </Declaration>
+    <Declaration>
+>>>>>>> Stashed changes
         <ObjectProperty IRI="#hasTool"/>
     </Declaration>
     <Declaration>
@@ -913,6 +943,13 @@
         <Class IRI="#Melon"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
+            <Class IRI="#Radish"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#SweetCorn"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1280,6 +1317,16 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Beans"/>
+<<<<<<< Updated upstream
+=======
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <Class IRI="#Carrot"/>
+>>>>>>> Stashed changes
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1615,11 +1662,26 @@
         <Class IRI="#PlantingTool"/>
     </SubClassOf>
     <SubClassOf>
+<<<<<<< Updated upstream
         <Class IRI="#Vehicle"/>
         <Class IRI="#AutonomusTractor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vehicle"/>
+=======
+        <Class IRI="#UAV"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSensor"/>
+            <Class IRI="#Sensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#AutonomusTractor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+>>>>>>> Stashed changes
         <ObjectMaxCardinality cardinality="1">
             <ObjectProperty IRI="#hasTool"/>
             <Class IRI="#Tool"/>
@@ -1638,6 +1700,17 @@
         <Class IRI="#Season"/>
         <Class IRI="#Sensor"/>
         <Class IRI="#SoilType"/>
+<<<<<<< Updated upstream
+=======
+        <Class IRI="#UAV"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AirSeeder"/>
+        <Class IRI="#PotatoPlanter"/>
+        <Class IRI="#PrecisionPlanter"/>
+        <Class IRI="#SeedDrill"/>
+        <Class IRI="#Transplanter"/>
+>>>>>>> Stashed changes
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Apiaceae"/>
@@ -1650,6 +1723,11 @@
     <DisjointClasses>
         <Class IRI="#Beans"/>
         <Class IRI="#Peas"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BoomSprayer"/>
+        <Class IRI="#Plow"/>
+        <Class IRI="#PrecisionPlanter"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#BoomSprayer"/>
@@ -1683,6 +1761,14 @@
         <Class IRI="#SoilPreparation"/>
         <Class IRI="#Sowing"/>
     </DisjointClasses>
+<<<<<<< Updated upstream
+=======
+    <DisjointClasses>
+        <Class IRI="#IrrigationTool"/>
+        <Class IRI="#PlantingTool"/>
+        <Class IRI="#SoilPrepTool"/>
+    </DisjointClasses>
+>>>>>>> Stashed changes
     <DisjointClasses>
         <Class IRI="#Tool"/>
         <Class IRI="#Vehicle"/>
@@ -1703,9 +1789,21 @@
         <Class IRI="#Season"/>
         <NamedIndividual IRI="#Winter"/>
     </ClassAssertion>
+<<<<<<< Updated upstream
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#canBePlantedWith"/>
     </SymmetricObjectProperty>
+=======
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTool"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#canBePlantedWith"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSensor"/>
+    </AsymmetricObjectProperty>
+>>>>>>> Stashed changes
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
     </AsymmetricObjectProperty>
@@ -1729,6 +1827,12 @@
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#canBePlantedWith"/>
+<<<<<<< Updated upstream
+=======
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSensor"/>
+>>>>>>> Stashed changes
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
@@ -1753,6 +1857,7 @@
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#canBePlantedWith"/>
+<<<<<<< Updated upstream
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Crop"/>
@@ -1764,6 +1869,21 @@
             <ObjectProperty IRI="#hasTool"/>
             <Class IRI="#Vehicle"/>
         </ObjectSomeValuesFrom>
+=======
+        <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPH"/>
+        <Class IRI="#SoilType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensor"/>
+        <Class IRI="#UAV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTool"/>
+        <Class IRI="#Vehicle"/>
+>>>>>>> Stashed changes
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPlantedIn"/>
@@ -1816,7 +1936,15 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPH"/>
+<<<<<<< Updated upstream
         <Class IRI="#PhSensor"/>
+=======
+        <Class IRI="#PhLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSensor"/>
+        <Class IRI="#Sensor"/>
+>>>>>>> Stashed changes
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTool"/>
