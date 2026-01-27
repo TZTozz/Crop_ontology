@@ -57,6 +57,9 @@
         <Class IRI="#Camera"/>
     </Declaration>
     <Declaration>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         <Class IRI="#Carrot"/>
     </Declaration>
@@ -94,6 +97,9 @@
         <Class IRI="#HighPowerVehicle"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HighPowerVehicle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HumiditySensor"/>
     </Declaration>
     <Declaration>
@@ -104,6 +110,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowPowerVehicle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LowPowerVehicle"/>
@@ -201,6 +210,9 @@
         <ObjectProperty IRI="#hasSensor"/>
     </Declaration>
     <Declaration>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         <ObjectProperty IRI="#hasTool"/>
     </Declaration>
@@ -1715,6 +1727,13 @@
             <ObjectProperty IRI="#hasSensor"/>
             <Class IRI="#Sensor"/>
         </ObjectSomeValuesFrom>
+<<<<<<< Updated upstream
+=======
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#AutonomusTractor"/>
+>>>>>>> Stashed changes
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vehicle"/>
@@ -2045,6 +2064,9 @@
         <Class IRI="#PrecisionPlanter"/>
         <Class IRI="#SeedDrill"/>
         <Class IRI="#Transplanter"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </DisjointClasses>
     <DisjointClasses>
@@ -2125,6 +2147,11 @@
         <Class IRI="#SoilPrepTool"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#IrrigationTool"/>
+        <Class IRI="#PlantingTool"/>
+        <Class IRI="#SoilPrepTool"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Tool"/>
         <Class IRI="#Vehicle"/>
     </DisjointClasses>
@@ -2146,7 +2173,10 @@
         <NamedIndividual IRI="#Winter"/>
     </ClassAssertion>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
     </FunctionalObjectProperty>
@@ -2154,6 +2184,9 @@
         <ObjectProperty IRI="#canBePlantedWith"/>
     </SymmetricObjectProperty>
 >>>>>>> Stashed changes
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSensor"/>
+    </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasSensor"/>
     </AsymmetricObjectProperty>
@@ -2171,7 +2204,10 @@
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
         <ObjectProperty IRI="#hasSensor"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
@@ -2189,11 +2225,28 @@
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <ObjectProperty IRI="#hasTool"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasTool"/>
             <Class IRI="#AutonomusTractor"/>
         </ObjectSomeValuesFrom>
+=======
+        <ObjectProperty IRI="#canBePlantedWith"/>
+        <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPH"/>
+        <Class IRI="#SoilType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensor"/>
+        <Class IRI="#UAV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTool"/>
+        <Class IRI="#Vehicle"/>
+>>>>>>> Stashed changes
 =======
         <ObjectProperty IRI="#canBePlantedWith"/>
         <Class IRI="#Crop"/>
@@ -2247,6 +2300,13 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPH"/>
         <Class IRI="#PhLevel"/>
+<<<<<<< Updated upstream
+=======
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSensor"/>
+        <Class IRI="#Sensor"/>
+>>>>>>> Stashed changes
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSensor"/>
