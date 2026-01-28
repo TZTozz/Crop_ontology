@@ -58,9 +58,6 @@
         <Class IRI="#Calcareous"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Camera"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Carrot"/>
     </Declaration>
     <Declaration>
@@ -127,9 +124,6 @@
         <Class IRI="#Melon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MobileSensor"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Neutral"/>
     </Declaration>
     <Declaration>
@@ -170,6 +164,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#PrecisionPlanter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RGBCamera"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Radish"/>
@@ -230,6 +227,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#UAV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UAVSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WindSensor"/>
@@ -672,10 +672,6 @@
             <ObjectProperty IRI="#hasPhLevel"/>
             <Class IRI="#Alkaline"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Camera"/>
-        <Class IRI="#MobileSensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Carrot"/>
@@ -1196,7 +1192,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LIDAR"/>
-        <Class IRI="#MobileSensor"/>
+        <Class IRI="#UAVSensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Loamy"/>
@@ -1281,10 +1277,6 @@
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
         </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MobileSensor"/>
-        <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Neutral"/>
@@ -1722,6 +1714,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RGBCamera"/>
+        <Class IRI="#UAVSensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Radish"/>
         <Class IRI="#Brassicaceae"/>
     </SubClassOf>
@@ -1818,7 +1814,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SAR"/>
-        <Class IRI="#MobileSensor"/>
+        <Class IRI="#UAVSensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sandy"/>
@@ -2159,6 +2155,10 @@
             <ObjectProperty IRI="#hasSensor"/>
             <Class IRI="#Sensor"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UAVSensor"/>
+        <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WindSensor"/>
