@@ -1864,6 +1864,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#sendsDataTo"/>
+            <Class IRI="#AutonomousTractor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Silty"/>
         <Class IRI="#SoilType"/>
     </SubClassOf>
@@ -2154,13 +2161,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#UAV"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#sendsDataTo"/>
-            <Class IRI="#AutonomousTractor"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#WindSensor"/>
         <Class IRI="#StationarySensor"/>
     </SubClassOf>
@@ -2417,7 +2417,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#sendsDataTo"/>
-        <Class IRI="#UAV"/>
+        <Class IRI="#Sensor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#actsOn"/>
