@@ -37,6 +37,21 @@
         <Class IRI="#Area3"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Area4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area8"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AutonomousTractor"/>
     </Declaration>
     <Declaration>
@@ -336,7 +351,7 @@
         <Class IRI="#Area1"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isSoilTypeOf"/>
-            <Class IRI="#Organic"/>
+            <Class IRI="#Sandy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -358,7 +373,62 @@
         <Class IRI="#Area3"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isSoilTypeOf"/>
-            <Class IRI="#Organic"/>
+            <Class IRI="#Sandy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area4"/>
+        <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area4"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSoilTypeOf"/>
+            <Class IRI="#Sandy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area5"/>
+        <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSoilTypeOf"/>
+            <Class IRI="#Loamy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area6"/>
+        <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSoilTypeOf"/>
+            <Class IRI="#Loamy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area7"/>
+        <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area7"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSoilTypeOf"/>
+            <Class IRI="#ClaySandy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area8"/>
+        <Class IRI="#Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area8"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSoilTypeOf"/>
+            <Class IRI="#ClaySandy"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -419,13 +489,6 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Eggplant"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -596,6 +659,13 @@
     <SubClassOf>
         <Class IRI="#Broccoli"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area5"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broccoli"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#needsPhLevel"/>
             <ObjectUnionOf>
                 <Class IRI="#Acidic"/>
@@ -654,6 +724,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Potato"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cabbage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area2"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -744,7 +821,7 @@
         <Class IRI="#Carrot"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isPlantedIn"/>
-            <Class IRI="#Area1"/>
+            <Class IRI="#Area7"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -821,7 +898,7 @@
         <Class IRI="#Cauliflower"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isPlantedIn"/>
-            <Class IRI="#Area3"/>
+            <Class IRI="#Area6"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -905,7 +982,7 @@
         <Class IRI="#Celery"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isPlantedIn"/>
-            <Class IRI="#Area3"/>
+            <Class IRI="#Area2"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1028,6 +1105,13 @@
     <SubClassOf>
         <Class IRI="#Cucumber"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area5"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#needsPhLevel"/>
             <ObjectUnionOf>
                 <Class IRI="#Acidic"/>
@@ -1145,7 +1229,7 @@
         <Class IRI="#Eggplant"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isPlantedIn"/>
-            <Class IRI="#Area2"/>
+            <Class IRI="#Area3"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1324,6 +1408,13 @@
     <SubClassOf>
         <Class IRI="#Melon"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area8"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melon"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#needsPhLevel"/>
             <ObjectUnionOf>
                 <Class IRI="#Acidic"/>
@@ -1407,6 +1498,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Radish"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parsnip"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area1"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1521,6 +1619,13 @@
     <SubClassOf>
         <Class IRI="#Peas"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area3"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peas"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#needsPhLevel"/>
             <ObjectUnionOf>
                 <Class IRI="#Acidic"/>
@@ -1573,6 +1678,13 @@
     <SubClassOf>
         <Class IRI="#Pepper"/>
         <Class IRI="#Solanaceae"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pepper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <Class IRI="#Parsnip"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pepper"/>
@@ -1754,6 +1866,13 @@
     <SubClassOf>
         <Class IRI="#Potato"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area3"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potato"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#needsPhLevel"/>
             <Class IRI="#Acidic"/>
         </ObjectSomeValuesFrom>
@@ -1908,6 +2027,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Tomato"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area7"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2075,6 +2201,13 @@
     <SubClassOf>
         <Class IRI="#Squash"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area4"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Squash"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#needsPhLevel"/>
             <ObjectUnionOf>
                 <Class IRI="#Acidic"/>
@@ -2170,6 +2303,13 @@
     <SubClassOf>
         <Class IRI="#SweetCorn"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area4"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetCorn"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#needsPhLevel"/>
             <ObjectUnionOf>
                 <Class IRI="#Acidic"/>
@@ -2259,6 +2399,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#canBePlantedWith"/>
             <Class IRI="#Radish"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tomato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <Class IRI="#Area7"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
