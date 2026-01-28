@@ -285,6 +285,27 @@
         <Class IRI="#PlantingTool"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AirSeeder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Clay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirSeeder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Gravel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AirSeeder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Rocky"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Alkaline"/>
         <Class IRI="#PhLevel"/>
     </SubClassOf>
@@ -471,6 +492,34 @@
     <SubClassOf>
         <Class IRI="#BoomSprayer"/>
         <Class IRI="#IrrigationTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoomSprayer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Clay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoomSprayer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Organic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoomSprayer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Peaty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoomSprayer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Rocky"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Brassicaceae"/>
@@ -952,6 +1001,48 @@
         <Class IRI="#IrrigationTool"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DripLineDeployer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Clay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DripLineDeployer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#ClaySandy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DripLineDeployer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Gravel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DripLineDeployer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Rocky"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DripLineDeployer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Sandy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DripLineDeployer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Silty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Eggplant"/>
         <Class IRI="#Solanaceae"/>
     </SubClassOf>
@@ -1029,6 +1120,34 @@
     <SubClassOf>
         <Class IRI="#Harrow"/>
         <Class IRI="#SoilPrepTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harrow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Clay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harrow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#ClaySandy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harrow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Loamy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harrow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Rocky"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HighPowerVehicle"/>
@@ -1414,6 +1533,55 @@
         <Class IRI="#SoilPrepTool"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Plow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Calcareous"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Clay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Gravel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Organic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Peaty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Rocky"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Silty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Poaceae"/>
         <Class IRI="#Crop"/>
     </SubClassOf>
@@ -1485,14 +1653,49 @@
         <Class IRI="#PlantingTool"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PotatoPlanter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Clay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PrecisionPlanter"/>
         <Class IRI="#PlantingTool"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PrecisionPlanter"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performs"/>
-            <Class IRI="#Sowing"/>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Clay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecisionPlanter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Organic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecisionPlanter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Peaty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecisionPlanter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Rocky"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecisionPlanter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Silty"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1611,6 +1814,27 @@
     <SubClassOf>
         <Class IRI="#SeedDrill"/>
         <Class IRI="#PlantingTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeedDrill"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Calcareous"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeedDrill"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Loamy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeedDrill"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Silty"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Silty"/>
@@ -1873,6 +2097,20 @@
     <SubClassOf>
         <Class IRI="#Transplanter"/>
         <Class IRI="#PlantingTool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transplanter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Clay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transplanter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#Peaty"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UAV"/>
