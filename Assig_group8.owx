@@ -115,6 +115,9 @@
         <Class IRI="#IrrigationTool"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LIDAR"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Loamy"/>
     </Declaration>
     <Declaration>
@@ -122,6 +125,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Melon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobileSensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Neutral"/>
@@ -172,6 +178,9 @@
         <Class IRI="#Rocky"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SAR"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Sandy"/>
     </Declaration>
     <Declaration>
@@ -205,10 +214,10 @@
         <Class IRI="#Squash"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SweetCorn"/>
+        <Class IRI="#StationarySensor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TemperatureSensor"/>
+        <Class IRI="#SweetCorn"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Tomato"/>
@@ -241,6 +250,9 @@
         <ObjectProperty IRI="#hasTool"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hostedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isPlantedIn"/>
     </Declaration>
     <Declaration>
@@ -263,6 +275,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#seasonPreferred"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sendsDataTo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Autumn"/>
@@ -660,7 +675,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Camera"/>
-        <Class IRI="#Sensor"/>
+        <Class IRI="#MobileSensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Carrot"/>
@@ -1162,7 +1177,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HumiditySensor"/>
-        <Class IRI="#Sensor"/>
+        <Class IRI="#StationarySensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Irrigation"/>
@@ -1178,6 +1193,10 @@
             <ObjectProperty IRI="#performs"/>
             <Class IRI="#Irrigation"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LIDAR"/>
+        <Class IRI="#MobileSensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Loamy"/>
@@ -1262,6 +1281,10 @@
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
         </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobileSensor"/>
+        <Class IRI="#Sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Neutral"/>
@@ -1515,7 +1538,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhSensor"/>
-        <Class IRI="#Sensor"/>
+        <Class IRI="#StationarySensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PlantingTool"/>
@@ -1794,6 +1817,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SAR"/>
+        <Class IRI="#MobileSensor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Sandy"/>
         <Class IRI="#SoilType"/>
     </SubClassOf>
@@ -1941,6 +1968,17 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#StationarySensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StationarySensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hostedBy"/>
+            <Class IRI="#Field"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SweetCorn"/>
         <Class IRI="#Poaceae"/>
     </SubClassOf>
@@ -2035,10 +2073,6 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TemperatureSensor"/>
-        <Class IRI="#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Tomato"/>
         <Class IRI="#Solanaceae"/>
     </SubClassOf>
@@ -2120,8 +2154,15 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UAV"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#sendsDataTo"/>
+            <Class IRI="#AutonomousTractor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#WindSensor"/>
-        <Class IRI="#Sensor"/>
+        <Class IRI="#StationarySensor"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Acidic"/>
@@ -2185,13 +2226,6 @@
         <Class IRI="#Rocky"/>
         <Class IRI="#Sandy"/>
         <Class IRI="#Silty"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Camera"/>
-        <Class IRI="#HumiditySensor"/>
-        <Class IRI="#PhSensor"/>
-        <Class IRI="#TemperatureSensor"/>
-        <Class IRI="#WindSensor"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Carrot"/>
@@ -2265,6 +2299,9 @@
         <ObjectProperty IRI="#hasTool"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hostedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
         <ObjectProperty IRI="#isPlantedIn"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
@@ -2284,6 +2321,9 @@
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#seasonPreferred"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#sendsDataTo"/>
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#actsOn"/>
@@ -2301,6 +2341,9 @@
         <ObjectProperty IRI="#hasTool"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hostedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#isPlantedIn"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
@@ -2321,6 +2364,9 @@
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#seasonPreferred"/>
     </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#sendsDataTo"/>
+    </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#actsOn"/>
         <Class IRI="#Tool"/>
@@ -2336,6 +2382,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSensor"/>
         <Class IRI="#UAV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hostedBy"/>
+        <Class IRI="#StationarySensor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPlantedIn"/>
@@ -2365,6 +2415,10 @@
         <ObjectProperty IRI="#seasonPreferred"/>
         <Class IRI="#Crop"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sendsDataTo"/>
+        <Class IRI="#UAV"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#actsOn"/>
         <Class IRI="#SoilType"/>
@@ -2384,6 +2438,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTool"/>
         <Class IRI="#Tool"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hostedBy"/>
+        <Class IRI="#Field"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPlantedIn"/>
@@ -2412,6 +2470,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#seasonPreferred"/>
         <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sendsDataTo"/>
+        <Class IRI="#AutonomousTractor"/>
     </ObjectPropertyRange>
 </Ontology>
 
