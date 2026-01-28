@@ -226,6 +226,9 @@
         <Class IRI="#WindSensor"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#actsOn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#canBePlantedWith"/>
     </Declaration>
     <Declaration>
@@ -2003,6 +2006,9 @@
         <NamedIndividual IRI="#Winter"/>
     </ClassAssertion>
     <FunctionalObjectProperty>
+        <ObjectProperty IRI="#actsOn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
@@ -2012,6 +2018,9 @@
         <ObjectProperty IRI="#canBePlantedWith"/>
     </SymmetricObjectProperty>
     <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#actsOn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasPhLevel"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
@@ -2041,6 +2050,9 @@
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#seasonPreferred"/>
     </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#actsOn"/>
+    </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#canBePlantedWith"/>
     </IrreflexiveObjectProperty>
@@ -2074,6 +2086,13 @@
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#seasonPreferred"/>
     </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#actsOn"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#actsOn"/>
+            <Class IRI="#SoilType"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#canBePlantedWith"/>
         <Class IRI="#Crop"/>
