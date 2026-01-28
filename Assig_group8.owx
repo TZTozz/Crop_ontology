@@ -2042,6 +2042,9 @@
         <ObjectProperty IRI="#seasonPreferred"/>
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#canBePlantedWith"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasPhLevel"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
