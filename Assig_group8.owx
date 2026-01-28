@@ -277,6 +277,9 @@
         <ObjectProperty IRI="#seasonPreferred"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#sendsDataTo"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Autumn"/>
     </Declaration>
     <Declaration>
@@ -2151,6 +2154,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UAV"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#sendsDataTo"/>
+            <Class IRI="#AutonomousTractor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#WindSensor"/>
         <Class IRI="#StationarySensor"/>
     </SubClassOf>
@@ -2312,6 +2322,9 @@
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#seasonPreferred"/>
     </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#sendsDataTo"/>
+    </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#actsOn"/>
     </IrreflexiveObjectProperty>
@@ -2350,6 +2363,9 @@
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#seasonPreferred"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#sendsDataTo"/>
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#actsOn"/>
@@ -2398,6 +2414,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#seasonPreferred"/>
         <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sendsDataTo"/>
+        <Class IRI="#UAV"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#actsOn"/>
@@ -2450,6 +2470,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#seasonPreferred"/>
         <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sendsDataTo"/>
+        <Class IRI="#AutonomousTractor"/>
     </ObjectPropertyRange>
 </Ontology>
 
