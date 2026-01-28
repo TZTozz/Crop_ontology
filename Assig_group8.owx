@@ -2006,9 +2006,6 @@
         <NamedIndividual IRI="#Winter"/>
     </ClassAssertion>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="#actsOn"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasTool"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
@@ -2088,10 +2085,7 @@
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#actsOn"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#actsOn"/>
-            <Class IRI="#SoilType"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#Tool"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#canBePlantedWith"/>
@@ -2133,6 +2127,10 @@
         <ObjectProperty IRI="#seasonPreferred"/>
         <Class IRI="#Crop"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#actsOn"/>
+        <Class IRI="#SoilType"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#canBePlantedWith"/>
         <Class IRI="#Crop"/>
