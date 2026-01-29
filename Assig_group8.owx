@@ -232,6 +232,9 @@
         <Class IRI="#SweetCorn"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TemperatureSensor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Tomato"/>
     </Declaration>
     <Declaration>
@@ -2135,6 +2138,10 @@
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
         </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureSensor"/>
+        <Class IRI="#StationarySensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tomato"/>
