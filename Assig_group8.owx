@@ -360,7 +360,10 @@
         <Class IRI="#Area4"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isSoilTypeOf"/>
-            <Class IRI="#Sandy"/>
+            <ObjectUnionOf>
+                <Class IRI="#Loamy"/>
+                <Class IRI="#Sandy"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -371,7 +374,10 @@
         <Class IRI="#Area5"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isSoilTypeOf"/>
-            <Class IRI="#Loamy"/>
+            <ObjectUnionOf>
+                <Class IRI="#Loamy"/>
+                <Class IRI="#Sandy"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -382,7 +388,10 @@
         <Class IRI="#Area6"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isSoilTypeOf"/>
-            <Class IRI="#Loamy"/>
+            <ObjectUnionOf>
+                <Class IRI="#Loamy"/>
+                <Class IRI="#Sandy"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -393,7 +402,10 @@
         <Class IRI="#Area7"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isSoilTypeOf"/>
-            <Class IRI="#ClaySandy"/>
+            <ObjectUnionOf>
+                <Class IRI="#ClaySandy"/>
+                <Class IRI="#Sandy"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -404,7 +416,10 @@
         <Class IRI="#Area8"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isSoilTypeOf"/>
-            <Class IRI="#ClaySandy"/>
+            <ObjectUnionOf>
+                <Class IRI="#ClaySandy"/>
+                <Class IRI="#Sandy"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
