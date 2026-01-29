@@ -439,97 +439,6 @@
     <SubClassOf>
         <Class IRI="#Beans"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Broccoli"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cabbage"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Carrot"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cauliflower"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Celery"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cucumber"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Eggplant"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Potato"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Squash"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#SweetCorn"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Tomato"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beans"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isPlantedIn"/>
             <Class IRI="#Area2"/>
         </ObjectSomeValuesFrom>
@@ -570,6 +479,28 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Beans"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Broccoli"/>
+                <Class IRI="#Cabbage"/>
+                <Class IRI="#Carrot"/>
+                <Class IRI="#Cauliflower"/>
+                <Class IRI="#Celery"/>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Eggplant"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Potato"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#Squash"/>
+                <Class IRI="#SweetCorn"/>
+                <Class IRI="#Tomato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beans"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Autumn"/>
@@ -593,34 +524,6 @@
     <SubClassOf>
         <Class IRI="#Broccoli"/>
         <Class IRI="#Brassicaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Broccoli"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Broccoli"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Celery"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Broccoli"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cucumber"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Broccoli"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Potato"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Broccoli"/>
@@ -655,6 +558,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Broccoli"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Broccoli"/>
+                <Class IRI="#Celery"/>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Potato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broccoli"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Spring"/>
@@ -663,34 +579,6 @@
     <SubClassOf>
         <Class IRI="#Cabbage"/>
         <Class IRI="#Brassicaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cabbage"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cabbage"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Celery"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cabbage"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cucumber"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cabbage"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Potato"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cabbage"/>
@@ -735,6 +623,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cabbage"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Cabbage"/>
+                <Class IRI="#Celery"/>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Potato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cabbage"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Autumn"/>
@@ -754,34 +655,6 @@
     <SubClassOf>
         <Class IRI="#Carrot"/>
         <Class IRI="#Apiaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Carrot"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Carrot"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Carrot"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Carrot"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Tomato"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Carrot"/>
@@ -830,6 +703,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Carrot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Carrot"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#Tomato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carrot"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
@@ -838,27 +724,6 @@
     <SubClassOf>
         <Class IRI="#Cauliflower"/>
         <Class IRI="#Brassicaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cauliflower"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cauliflower"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Celery"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cauliflower"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cucumber"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cauliflower"/>
@@ -900,6 +765,18 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cauliflower"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Cauliflower"/>
+                <Class IRI="#Celery"/>
+                <Class IRI="#Cucumber"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cauliflower"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Autumn"/>
@@ -908,41 +785,6 @@
     <SubClassOf>
         <Class IRI="#Celery"/>
         <Class IRI="#Apiaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Celery"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Celery"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Broccoli"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Celery"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cabbage"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Celery"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cauliflower"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Celery"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Tomato"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Celery"/>
@@ -978,6 +820,20 @@
             <ObjectProperty IRI="#needsTypeSeeding"/>
             <Class IRI="#Transplanter"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Celery"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Broccoli"/>
+                <Class IRI="#Cabbage"/>
+                <Class IRI="#Cauliflower"/>
+                <Class IRI="#Celery"/>
+                <Class IRI="#Tomato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Celery"/>
@@ -1022,55 +878,6 @@
     <SubClassOf>
         <Class IRI="#Cucumber"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cucumber"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Broccoli"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cucumber"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cabbage"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cucumber"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cauliflower"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cucumber"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cucumber"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cucumber"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#SweetCorn"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cucumber"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isPlantedIn"/>
             <Class IRI="#Area5"/>
         </ObjectSomeValuesFrom>
@@ -1111,6 +918,22 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cucumber"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Broccoli"/>
+                <Class IRI="#Cabbage"/>
+                <Class IRI="#Cauliflower"/>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#SweetCorn"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
@@ -1127,27 +950,6 @@
     <SubClassOf>
         <Class IRI="#Eggplant"/>
         <Class IRI="#Solanaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Eggplant"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Eggplant"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Eggplant"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Potato"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Eggplant"/>
@@ -1183,6 +985,18 @@
             <ObjectProperty IRI="#needsTypeSeeding"/>
             <Class IRI="#Transplanter"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eggplant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Eggplant"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Potato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Eggplant"/>
@@ -1276,34 +1090,6 @@
     <SubClassOf>
         <Class IRI="#Melon"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Melon"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Melon"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#SweetCorn"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Melon"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Tomato"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Melon"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isPlantedIn"/>
             <Class IRI="#Area8"/>
         </ObjectSomeValuesFrom>
@@ -1344,6 +1130,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Melon"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Melon"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#SweetCorn"/>
+                <Class IRI="#Tomato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melon"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
@@ -1374,27 +1173,6 @@
     <SubClassOf>
         <Class IRI="#Parsnip"/>
         <Class IRI="#Apiaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Parsnip"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Parsnip"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Pepper"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Parsnip"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Parsnip"/>
@@ -1440,6 +1218,18 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Parsnip"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Parsnip"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Pepper"/>
+                <Class IRI="#Radish"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parsnip"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Winter"/>
@@ -1448,69 +1238,6 @@
     <SubClassOf>
         <Class IRI="#Peas"/>
         <Class IRI="#Fabaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Carrot"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cucumber"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Eggplant"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Melon"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Parsnip"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Potato"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Peas"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#SweetCorn"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Peas"/>
@@ -1555,6 +1282,24 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Peas"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Carrot"/>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Eggplant"/>
+                <Class IRI="#Melon"/>
+                <Class IRI="#Parsnip"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Potato"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#SweetCorn"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peas"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Spring"/>
@@ -1574,20 +1319,6 @@
     <SubClassOf>
         <Class IRI="#Pepper"/>
         <Class IRI="#Solanaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pepper"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Parsnip"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pepper"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Tomato"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pepper"/>
@@ -1629,6 +1360,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pepper"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Parsnip"/>
+                <Class IRI="#Pepper"/>
+                <Class IRI="#Tomato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pepper"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
@@ -1660,55 +1402,6 @@
     <SubClassOf>
         <Class IRI="#Potato"/>
         <Class IRI="#Solanaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Potato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Potato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Broccoli"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Potato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cabbage"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Potato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Eggplant"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Potato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Potato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Potato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#SweetCorn"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Potato"/>
@@ -1750,6 +1443,22 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Potato"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Broccoli"/>
+                <Class IRI="#Cabbage"/>
+                <Class IRI="#Eggplant"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Potato"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#SweetCorn"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potato"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Spring"/>
@@ -1770,69 +1479,6 @@
     <SubClassOf>
         <Class IRI="#Radish"/>
         <Class IRI="#Brassicaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Carrot"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cucumber"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Melon"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Parsnip"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Potato"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Squash"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Tomato"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Radish"/>
@@ -1871,6 +1517,24 @@
             <ObjectProperty IRI="#needsTypeSeeding"/>
             <Class IRI="#SeedDrill"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radish"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Carrot"/>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Melon"/>
+                <Class IRI="#Parsnip"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Potato"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#Squash"/>
+                <Class IRI="#Tomato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Radish"/>
@@ -1964,27 +1628,6 @@
     <SubClassOf>
         <Class IRI="#Squash"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Squash"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Squash"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#SweetCorn"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Squash"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isPlantedIn"/>
             <Class IRI="#Area4"/>
         </ObjectSomeValuesFrom>
@@ -2022,6 +1665,18 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Squash"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#Squash"/>
+                <Class IRI="#SweetCorn"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Squash"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Winter"/>
@@ -2041,48 +1696,6 @@
     <SubClassOf>
         <Class IRI="#SweetCorn"/>
         <Class IRI="#Poaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SweetCorn"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SweetCorn"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Cucumber"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SweetCorn"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Melon"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SweetCorn"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Peas"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SweetCorn"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Potato"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SweetCorn"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Squash"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SweetCorn"/>
@@ -2134,6 +1747,21 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SweetCorn"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Melon"/>
+                <Class IRI="#Peas"/>
+                <Class IRI="#Potato"/>
+                <Class IRI="#Squash"/>
+                <Class IRI="#SweetCorn"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetCorn"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
@@ -2146,48 +1774,6 @@
     <SubClassOf>
         <Class IRI="#Tomato"/>
         <Class IRI="#Solanaceae"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tomato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Beans"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tomato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Carrot"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tomato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Celery"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tomato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Melon"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tomato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Pepper"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tomato"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#canBePlantedWith"/>
-            <Class IRI="#Radish"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tomato"/>
@@ -2229,6 +1815,21 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tomato"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePlantedWith"/>
+            <ObjectUnionOf>
+                <Class IRI="#Beans"/>
+                <Class IRI="#Carrot"/>
+                <Class IRI="#Celery"/>
+                <Class IRI="#Melon"/>
+                <Class IRI="#Pepper"/>
+                <Class IRI="#Radish"/>
+                <Class IRI="#Tomato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tomato"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#seasonPreferred"/>
             <NamedIndividual IRI="#Summer"/>
@@ -2253,11 +1854,6 @@
         <Class IRI="#WindSensor"/>
         <Class IRI="#StationarySensor"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Acidic"/>
-        <Class IRI="#Alkaline"/>
-        <Class IRI="#Neutral"/>
-    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#AgriculturalOperation"/>
         <Class IRI="#AutonomousTractor"/>
@@ -2341,6 +1937,12 @@
         <Class IRI="#LowPowerVehicle"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#HumiditySensor"/>
+        <Class IRI="#PhSensor"/>
+        <Class IRI="#TemperatureSensor"/>
+        <Class IRI="#WindSensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Irrigation"/>
         <Class IRI="#SoilPreparation"/>
         <Class IRI="#Sowing"/>
@@ -2349,6 +1951,15 @@
         <Class IRI="#IrrigationTool"/>
         <Class IRI="#PlantingTool"/>
         <Class IRI="#SoilPrepTool"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LIDAR"/>
+        <Class IRI="#RGBCamera"/>
+        <Class IRI="#SAR"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StationarySensor"/>
+        <Class IRI="#UAVSensor"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Season"/>
@@ -2412,9 +2023,6 @@
         <ObjectProperty IRI="#sendsDataTo"/>
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#canBePlantedWith"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasPhLevel"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
@@ -2471,6 +2079,10 @@
         <Class IRI="#Crop"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSoilTypeOf"/>
+        <Class IRI="#Field"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#needsPhLevel"/>
         <Class IRI="#Crop"/>
     </ObjectPropertyDomain>
@@ -2523,6 +2135,10 @@
         <Class IRI="#Field"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSoilTypeOf"/>
+        <Class IRI="#SoilType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#needsPhLevel"/>
         <Class IRI="#PhLevel"/>
     </ObjectPropertyRange>
@@ -2550,6 +2166,15 @@
         <ObjectProperty IRI="#sendsDataTo"/>
         <Class IRI="#AutonomousTractor"/>
     </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#isPlantedIn"/>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#isPlantedIn"/>
+            </ObjectInverseOf>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#canBePlantedWith"/>
+    </SubObjectPropertyOf>
 </Ontology>
 
 
