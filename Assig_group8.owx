@@ -2170,10 +2170,6 @@
         <Class IRI="#UAV"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTool"/>
-        <Class IRI="#AutonomousTractor"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hostedBy"/>
         <Class IRI="#StationarySensor"/>
     </ObjectPropertyDomain>
